@@ -5,5 +5,5 @@ let gulp = require('gulp'),
 	webpack = require('webpack-stream');
 
 gulp.task('sass', function(){
-	
+	gulp.src()
 });
