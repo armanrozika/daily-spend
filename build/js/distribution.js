@@ -1,0 +1,1 @@
+function logOne(){console.log("one")}function logTwo(){console.log("two")}
