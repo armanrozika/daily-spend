@@ -1,3 +1,1 @@
-function logTwo(){
-	console.log('two');
-}
+//this is a comment

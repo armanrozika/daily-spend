@@ -4,12 +4,15 @@ let gulp = require('gulp'),
 	browserSync = require('browser-sync'),
 	webpack = require('webpack-stream'),
 	concat = require('gulp-concat'),
-	uglify = require('gulp-uglify');
+	uglify = require('gulp-uglify'),
+	csso = require('gulp-csso'),
+	babel = require('babel-preset-env');
 
 gulp.task('sass', function(){
 	return gulp.src('./src/sass/**/*.scss')
 			.pipe(sass())
 			.pipe(autoprefixer())
+			.pipe(csso())
 			.pipe(gulp.dest('./build/css'))
 });
 

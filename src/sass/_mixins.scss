@@ -1,0 +1,6 @@
+/* Media Query */
+@mixin if-460-higher{
+	@media (min-width: 460px){
+		@content;
+	}
+}

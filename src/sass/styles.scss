@@ -1,4 +1,70 @@
-body{
-	background-color: blue;
-	display: grid;
+@import '_reset.scss';
+@import '_header.scss';
+@import '_mixins.scss';
+
+header{
+	font-family: arial;
+	font-weight: bold;
+	font-size: 20px;
+	color: #2c3e50;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 15px;
 }
+
+.input-parent-wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	background: lighten(blue, 40%);
+	border-radius: 3px;
+
+	select{
+		&:focus{
+			outline: 0;
+		}
+		width: 150px;
+		height: 33px;
+		margin-bottom: 17px;
+		border: none;
+		border-radius: 3px;
+		outline: 0;
+	}
+
+	input{
+		width: 138px;
+		height: 30px;
+		margin-bottom: 17px;
+		border: none;
+		outline: 0;
+		padding-left: 10px;
+	}
+
+	button{
+		&:focus{
+			outline: 0;
+		}
+		font-size: 20px;
+		background: #3498db;
+		color: white;
+		outline: none;
+		border: 1px #ecf0f1 solid;
+		width: 70px;
+		height: 70px;
+		margin-bottom: 17px;
+		border-radius: 10%;
+		position: relative;
+		top: 30%;
+		box-shadow: 0 1px 7px black;
+		@include if-460-higher{
+			background: black;
+		}
+	}
+}
+
+
