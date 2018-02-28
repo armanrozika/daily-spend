@@ -55,7 +55,8 @@ function saveMessage(hari, bulan, tahun, barang, harga){
 //I think I found a better way, eliminate unnecessary code
 //I don't have to make an empty oject outside eventlistener, I don't have to make empty object anywhere.
 //I am storing the data in firebase, the saveMessage Function make the object to store the data.
-//Try to do JSON stringify inside saveMessage Function,
+//Try to do JSON stringify inside saveMessage Function, 
+//OOPS no need to do JSON stringify, firebase do that!
 
 
 
